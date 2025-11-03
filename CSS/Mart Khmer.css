@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f4f4f4;
+}
+.container{
+    width: 100%;
+}
+.navbar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: rgba(1, 17, 22, 0.7)
+}
+.navbar .logo {
+    width: 25;
+}
+.navbar .logo a {
+    text-decoration: none;
+    color: rgb(200, 41, 121);
+    font-size: 20px;   
+}
+.navbar .responsive-nav {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .responsive-nav .nav-center {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.navbar .responsive-nav .nav-center li a{
+    text-decoration: none;
+    color: #dadada;
+    font-weight: bold;
+    padding: 15px 30px;
+    font-size: 15px;
+    display: block;
+}
+.navbar .responsive-nav .nav-center li:hover a {
+    background-color: #333333;
+    color: #ffffff;
+    transition: all 0.3s linear;
+}
+.navbar .responsive-nav .nav-right {
+    display: flex;
+    align-items: center;
+}
+.navbar .responsive-nav .nav-right .user {
+    font-size: 24px;
+    margin-left: 15px;
+}
+.navbar .responsive-nav .nav-right .search-box {
+    display: flex;
+    border: 1px solid #333333;
+    width: 200;
+}
+.navbar .responsive-nav .nav-right .search-box input {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding-left: 3%;
+}
+.navbar .responsive-nav .nav-right .search-box i {
+    width: 20%;
+    padding: 10px 0;
+    border-left: 1px solid #333333;
+    text-align: center;
+    background-color: #2ecc71;
+    color: #f4f4f4;
+    cursor: pointer;
+    font-size: 20px
+}
+
+.navbar .hambugar{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: black;
+    color: #f4f4f4;
+    padding: 5px 10px;
+    animation: hambugar 1s linear infinite alternate;
+}
+
+@keyframes hambugar{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 1280px) {
+    .navbar .logo {
+        padding: 20px 0;
+    }
+    .navbar .hambugar {
+        display: block;
+    }
+    .navbar .responsive-nav {
+        flex-direction: column;
+        position: fixed;
+        top: -650%;
+         left: 0;
+        background-color: rgba(130, 93, 29, 0.968);
+        width: 100%;
+        transition: all0.5s linear;
+    }
+    .navbar .responsive-nav.active {
+        top: 9.7%;
+    }
+    .navbar .responsive-nav .nav-center {
+        flex-direction: column;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}

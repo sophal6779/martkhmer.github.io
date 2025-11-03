@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #04574f;
+  }
+    .navbar {
+    background-color: #04574f;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+
+  .navbar img {
+    margin-top: 10px;
+    margin-bottom: 7px; 
+    margin-left: 50px;
+    width: 220px;
+    height: 50px;
+  }
+
+    .line{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    }
+
+/* Register Form */
+.Register {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.container{
+    background-color: #ecfaf6;
+    padding: 20px 50px;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+}
+.container h3{
+    font-size: 24px;
+    font-family: Algerian, khmer os koulen;
+    color: rgb(33, 137, 101);
+    margin-bottom: 4px;
+}
+.container p{
+    font-size: 14px;
+    font-family: khmer os freehand;
+    color: rgb(66, 64, 61);
+    margin-bottom: 20px;
+}
+.input-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.input-group{
+    text-align: left;
+    margin-bottom: 14px;
+}
+.input-group label{
+    font-family: khmer os Bokor;
+    display: block;
+    font-size: 14px;
+    color: #016b61;
+    margin-bottom: 6px;
+}
+.input-group input{
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #016b61;
+    background-color: #e8dada;
+}
+.input-group input:focus{
+    border-color: #1fa377;
+    box-shadow: rgb(144, 24, 24);
+    outline: none;
+}
+.btn {
+    padding: 10px 12px;
+    width: 70%;
+    background-color: #016b61;
+    font-family: khmer os freehand;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: #fbfefe;
+}
+.login{
+    margin-top: 20px;
+    color: #016b61;
+}
+.login a{
+    text-decoration: none;
+    color: #016b61;
+}
+.login a:hover{
+    text-decoration: underline;
+}
+/* End of Register Form */
